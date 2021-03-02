@@ -1,0 +1,4 @@
+export const ADD_TO_TRACKER = 'ADD_TO_TRACKER';
+export const REMOVE_TO_TRACKER = 'REMOVE_TO_TRACKER';
+export const CLEAR_TRACKER = 'CLEAR_TRACKER';
+export const CHANGE_AUTH = 'CHANGE_AUTH';

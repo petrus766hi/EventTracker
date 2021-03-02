@@ -1,0 +1,59 @@
+{
+  "name": "Redwires",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "bundle-android": "(react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/ && say 'dimas aka dimboy')|| say 'Bundle Android Bad'",
+    "release-android": "(cd android && ./gradlew assembleRelease && cd .. && say 'Android rilis') || (cd .. && say 'Android Release Failed')",
+    "releaseb-android": "cd android && ./gradlew bundleRelease && cd .. && say 'Android rilis'",
+    "build-android": "(cd android && ./gradlew assembleDebug && cd .. && say 'budi mana? budi orang bekasi') || (cd .. && say 'Android Build Failed')"
+  },
+  "dependencies": {
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/drawer": "^5.12.3",
+    "@react-navigation/native": "^5.7.6",
+    "@react-navigation/stack": "^5.9.3",
+    "firebase": "^7.24.0",
+    "formik": "^2.2.1",
+    "fuse.js": "^6.4.6",
+    "lodash": "^4.17.21",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-elements": "^3.0.0-alpha.1",
+    "react-native-flash-message": "^0.1.23",
+    "react-native-gesture-handler": "^1.7.0",
+    "react-native-paper": "^4.7.2",
+    "react-native-reanimated": "^1.13.1",
+    "react-native-safe-area-context": "^3.1.8",
+    "react-native-screens": "^2.10.1",
+    "react-native-toast-message": "^1.4.7",
+    "react-native-unimodules": "~0.11.0",
+    "react-native-vector-icons": "^7.1.0",
+    "react-native-web": "~0.13.12",
+    "react-native-youtube": "^2.0.1",
+    "react-redux": "^7.2.2",
+    "reactotron-react-native": "^5.0.0",
+    "redux": "^4.0.5",
+    "redux-promise": "^0.6.0",
+    "yup": "^0.29.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/runtime": "^7.12.13",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.19.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.65.0",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
