@@ -6,10 +6,10 @@ import {Icon} from 'react-native-elements';
 import {useNavigation} from '@react-navigation/native';
 import {View} from 'react-native';
 
-import VideoScreen from '../componets/home/videos';
-import VideosScreen from '../componets/home/videos/video';
-import HomeScreen from '../componets/home/articles';
-import ArticleScreen from '../componets/home/articles/article';
+import TrackerScreen from '../componets/home/tracker';
+import TrackerDetailScreen from '../componets/home/tracker/trackerDetail';
+import HomeScreen from '../componets/home/events';
+import EventDetailScreen from '../componets/home/events/eventsDetail';
 
 export const Stack = createStackNavigator();
 export const screenOptions = {
@@ -48,7 +48,7 @@ export const HomeStack = () => {
         component={HomeScreen}
         options={{headerLeft: () => <IconLeft />}}
       />
-      <Stack.Screen name="Article_Screen" component={ArticleScreen} />
+      <Stack.Screen name="Article_Screen" component={EventDetailScreen} />
     </Stack.Navigator>
   );
 };
@@ -62,10 +62,10 @@ export const VideoStack = () => {
       }}>
       <Stack.Screen
         name="Video_Screen"
-        component={VideoScreen}
+        component={TrackerScreen}
         options={{headerLeft: () => <IconLeft />}}
       />
-      <Stack.Screen name="Videos_Screen" component={VideosScreen} />
+      <Stack.Screen name="Videos_Screen" component={TrackerDetailScreen} />
     </Stack.Navigator>
   );
 };

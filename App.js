@@ -10,7 +10,7 @@ import {Stack, HomeStack, VideoStack, screenOptions} from './src/routes/stacks';
 const Drawer = createDrawerNavigator();
 
 import AuthScreen from './src/componets/auth';
-import VideosScreen from './src/componets/home/videos';
+import TrackerScreen from './src/componets/home/tracker';
 
 const DrawerNav = () => {
   return (
@@ -37,7 +37,7 @@ class App extends Component {
               />
               <Stack.Screen
                 name="VideosScreen"
-                component={VideosScreen}
+                component={TrackerScreen}
                 options={{
                   ...screenOptions,
                   headerBackTitleVisible: false,
